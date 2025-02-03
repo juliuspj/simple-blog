@@ -1,4 +1,5 @@
 <script>
+	export const prerender = true;
 	import { Header } from "$components";
 	import "./../app.css";
 	import { invalidate } from "$app/navigation";
