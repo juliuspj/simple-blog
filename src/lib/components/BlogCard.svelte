@@ -18,11 +18,6 @@
 		<p>{blog.created_at}</p>
 		<p class="mb-s">{blog.blog}</p>
 	</div>
-	<!-- <div class="pagination">
-		{#each Array(totalPages) as _, idx}
-			<a href="/dashboard?limit={pageSize}&skip={pageSize * idx}">{idx + 1}</a>
-		{/each}
-	</div> -->
 </a>
 
 <style>
