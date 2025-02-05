@@ -1,4 +1,5 @@
 import { redirect } from "@sveltejs/kit";
+export const prerender = true;
 interface ReturnObject {
 	success: boolean;
 	errors: string[];

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { PUBLIC_FRONTEND_URL } from "$env/static/public";
 import { fail, redirect } from "@sveltejs/kit";
-
+export const prerender = true;
 interface ReturnObject {
 	success: boolean;
 	email: string;

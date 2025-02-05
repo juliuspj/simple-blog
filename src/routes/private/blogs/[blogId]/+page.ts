@@ -1,6 +1,6 @@
 import { error } from "@sveltejs/kit";
 import type { PageLoad } from "./$types";
-
+export const prerender = true;
 export const load: PageLoad = async ({ parent, params }) => {
 	const { supabase } = await parent();
 	const { blogId } = params;
