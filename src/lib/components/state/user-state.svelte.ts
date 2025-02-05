@@ -39,7 +39,12 @@ export class UserState {
 		const userId = this.user.id;
 
 		const [blogsResponse, userNamesResponse] = await Promise.all([
-			this.supabase.from("blogs").select("*").eq("user_id", userId),
+			this.supabase
+				.from("blogs")
+				.select("*")
+				.eq("user_id", userId)
+				.range(0, 9)
+				.order("id", { ascending: false }),
 			this.supabase.from("user_names").select("name").eq("user_id", userId).single()
 		]);
 

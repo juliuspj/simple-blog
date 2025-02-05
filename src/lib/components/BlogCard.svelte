@@ -6,10 +6,6 @@
 	}
 
 	let { blog }: BlogCardProps = $props();
-
-	let pageSize = 2;
-
-	let test = 0;
 </script>
 
 <a class="blog-card" href={`/private/blogs/${blog.id}`}>

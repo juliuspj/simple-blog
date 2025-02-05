@@ -10,6 +10,7 @@
 <header>
 	<a href={user ? "/private/dashboard" : "/"}>
 		<img class="logo" src={BlogLogo} alt="Go to home" />
+		<!-- flaticon.com -->
 	</a>
 	<nav>
 		{#if !user}
