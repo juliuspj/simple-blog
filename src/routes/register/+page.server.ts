@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { fail, redirect } from "@sveltejs/kit";
+
 interface ReturnObject {
 	success: boolean;
 	errors: string[];
