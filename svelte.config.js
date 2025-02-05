@@ -13,11 +13,12 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter({
 			base: "/juliuspj.github.io/"
-		})
-	},
-	alias: {
-		$components: "src/lib/components",
-		$assets: "src/assets"
+		}),
+
+		alias: {
+			$components: "src/lib/components",
+			$assets: "src/assets"
+		}
 	}
 };
 
