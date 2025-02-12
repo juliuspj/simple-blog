@@ -1,5 +1,5 @@
 import { redirect, type RequestHandler } from "@sveltejs/kit";
-export const prerender = true;
+export const prerender = "auto";
 export const GET: RequestHandler = async ({ url, locals: { supabase } }) => {
 	const code = url.searchParams.get("code");
 
@@ -33,7 +33,7 @@ export const GET: RequestHandler = async ({ url, locals: { supabase } }) => {
 			}
 		}
 
-		throw redirect(303, "/private/dashboard");
+		throw redirect(303, "/main/dashboard");
 	}
 
 	return new Response("Session data not found", { status: 400 });

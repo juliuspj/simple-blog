@@ -9,7 +9,7 @@
 
 <div class="dashboard">
 	<div class="dashboard-header mb-m">
-		<a href="../private/add/" class="add-blog">
+		<a href="../main/add/" class="add-blog">
 			<Icon icon="icons8:plus" width={"72"} height={"72"} />
 			<p>Add a blog</p>
 		</a>

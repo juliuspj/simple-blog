@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { fail, redirect } from "@sveltejs/kit";
-
+export const prerender = "auto";
 interface ReturnObject {
 	success: boolean;
 	errors: string[];
@@ -58,6 +58,6 @@ export const actions = {
 				name
 			}
 		]);
-		redirect(303, "/private/dashboard");
+		redirect(303, "/main/dashboard");
 	}
 };

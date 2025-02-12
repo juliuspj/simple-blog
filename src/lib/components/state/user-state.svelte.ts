@@ -2,6 +2,7 @@ import { goto } from "$app/navigation";
 import type { Database } from "$lib/types/database.types";
 import type { Session, SupabaseClient, User } from "@supabase/supabase-js";
 import { getContext, setContext } from "svelte";
+export const prerender = "auto";
 interface UserStateProps {
 	session: Session | null;
 	supabase: SupabaseClient | null;

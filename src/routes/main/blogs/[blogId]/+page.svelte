@@ -4,7 +4,7 @@
 
 	interface BlogPageProps {
 		data: {
-			blog: Blog;
+			blog: Blogs;
 		};
 	}
 	let { data }: BlogPageProps = $props();

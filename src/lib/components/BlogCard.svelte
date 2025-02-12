@@ -8,7 +8,7 @@
 	let { blog }: BlogCardProps = $props();
 </script>
 
-<a class="blog-card" href={`/private/blogs/${blog.id}`}>
+<a class="blog-card" href={`/main/blogs/${blog.id}`}>
 	<div class="blog-info">
 		<h4>{blog.title}</h4>
 		<p>{blog.created_at}</p>

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { PUBLIC_FRONTEND_URL } from "$env/static/public";
 import { fail, redirect } from "@sveltejs/kit";
-export const prerender = true;
+export const prerender = "auto";
 interface ReturnObject {
 	success: boolean;
 	email: string;
@@ -44,7 +44,7 @@ export const actions = {
 			returnObject.success = false;
 			return fail(400, returnObject as any);
 		}
-		redirect(303, "/private/dashboard");
+		redirect(303, "/main/dashboard");
 	},
 	googleLogin: async ({ locals: { supabase } }) => {
 		const { data, error } = await supabase.auth.signInWithOAuth({

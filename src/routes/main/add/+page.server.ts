@@ -1,5 +1,5 @@
 import { redirect } from "@sveltejs/kit";
-export const prerender = true;
+export const prerender = "auto";
 interface ReturnObject {
 	success: boolean;
 	errors: string[];
@@ -43,6 +43,6 @@ export const actions = {
 			console.log(error);
 		}
 
-		redirect(303, "/private/dashboard");
+		redirect(303, "/main/dashboard");
 	}
 };

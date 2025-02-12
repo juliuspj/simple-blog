@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Button from "$components/Button.svelte";
-	import type { ActionData } from "../../routes/private/add/$types";
+	import type { ActionData } from "../../routes/main/add/$types";
 	interface ComponentProps {
 		formBlog: ActionData;
 	}

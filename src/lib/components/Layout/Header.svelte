@@ -8,7 +8,7 @@
 </script>
 
 <header>
-	<a href={user ? "/private/dashboard" : "/"}>
+	<a href={user ? "/main/dashboard" : "/"}>
 		<img class="logo" src={BlogLogo} alt="Go to home" />
 		<!-- flaticon.com -->
 	</a>
